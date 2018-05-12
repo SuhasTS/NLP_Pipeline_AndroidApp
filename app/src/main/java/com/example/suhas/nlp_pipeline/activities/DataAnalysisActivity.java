@@ -99,7 +99,6 @@ public class DataAnalysisActivity extends AppCompatActivity {
                         }
                         eachClusterAdapter=new EachClusterAdapter(listOfClusters,mContext);
                         clusterRecylerView.setAdapter(eachClusterAdapter);
-                        Log.d("response", response.toString());
                         mDialog.dismiss();
                         // jasoDisplayTextView.setText(response.toString());
                     }
