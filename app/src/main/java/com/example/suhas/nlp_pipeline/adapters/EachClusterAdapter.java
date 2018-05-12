@@ -1,6 +1,7 @@
 package com.example.suhas.nlp_pipeline.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.Button;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.suhas.nlp_pipeline.R;
+import com.example.suhas.nlp_pipeline.activities.EachFileDetails;
 import com.example.suhas.nlp_pipeline.data.ClusterInfo;
 import com.google.android.flexbox.AlignItems;
 import com.google.android.flexbox.FlexDirection;
@@ -80,6 +82,9 @@ public class EachClusterAdapter extends RecyclerView.Adapter<EachClusterAdapter.
                             public void onSelection(MaterialDialog dialog, View view, int which, CharSequence text)
                             {
                                 Log.d("dialog","name=>"+text.toString()+"path=>"+clusterList.get(position).getFilePaths().get(which));
+                                Intent eachFileActivity=new Intent(mContext, EachFileDetails.class);
+                                eachFileActivity.putExtra("path",clusterList.get(position).getFilePaths().get(which));
+                                mContext.startActivity(eachFileActivity);
                             }
                         })
                         .show();
