@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NLP_Pipeline.iml" filepath="$PROJECT_DIR$/NLP_Pipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NLP_Pipeline_Android_App.iml" filepath="$PROJECT_DIR$/NLP_Pipeline_Android_App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
