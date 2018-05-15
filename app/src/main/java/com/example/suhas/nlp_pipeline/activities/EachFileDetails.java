@@ -22,6 +22,8 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.suhas.nlp_pipeline.R;
 import com.example.suhas.nlp_pipeline.adapters.EachClusterSummaryAdapter;
+import com.example.suhas.nlp_pipeline.data.preference.SharedPreference;
+import com.example.suhas.nlp_pipeline.helpers.NLPApplication;
 import com.google.android.flexbox.AlignItems;
 import com.google.android.flexbox.FlexDirection;
 import com.google.android.flexbox.FlexWrap;
@@ -55,7 +57,7 @@ public class EachFileDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_each_file_details);
         ButterKnife.bind(this);
-        url = "http://192.168.0.104:8000/api/file_details/";
+        url = SharedPreference.get(this,SharedPreference.URL,"")+"/api/file_details/";
         mDialog = new SimpleArcDialog(this);
         mDialog.setConfiguration(new ArcConfiguration(this));
         topWords=new ArrayList<>();

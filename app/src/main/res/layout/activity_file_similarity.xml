@@ -4,36 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.suhas.nlp_pipeline.activities.MainActivity">
+    tools:context="com.example.suhas.nlp_pipeline.activities.FileSimilarity">
 
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="75dp"
         android:id="@+id/firstFileSelector"
-        android:text="File 1"
-        android:layout_marginTop="20dp"/>
+        android:text="Select first file"
+        android:layout_marginTop="20dp"
+        android:theme="@style/MyButton"/>
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="75dp"
         android:layout_below="@id/firstFileSelector"
         android:id="@+id/secondFileSelector"
-        android:text="File 2"
+        android:text="Select second file"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:theme="@style/MyButton"
         />
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="290dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="75dp"
         android:layout_below="@+id/secondFileSelector"
         android:layout_marginTop="20dp"
         android:text="Get similarity"
+        android:theme="@style/MyButton"
         android:id="@+id/similarityPost"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
         android:id="@+id/similarityScore"
         android:layout_below="@id/similarityPost"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
 
 </RelativeLayout>

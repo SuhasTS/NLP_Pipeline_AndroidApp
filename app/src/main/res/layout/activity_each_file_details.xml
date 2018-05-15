@@ -9,18 +9,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fileContents"
-        android:maxLines = "50"
+        android:maxLines = "30"
         android:scrollbars = "vertical"
         android:layout_margin="5dp"
 
         />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:text="Get Summary"
+        android:text="Top Entities"
         android:id="@+id/getTopWords"
         android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/MyButton"
         />
 
 </RelativeLayout>
