@@ -14,6 +14,8 @@ import com.android.volley.toolbox.Volley;
 public class NLPApplication extends Application
 {
     private static final Object TAG = NLPApplication.class.getSimpleName();
+
+
     private static NLPApplication mInstance;
     private RequestQueue mRequestQueue;
     @Override

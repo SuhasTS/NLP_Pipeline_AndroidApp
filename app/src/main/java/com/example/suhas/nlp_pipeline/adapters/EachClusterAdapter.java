@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.suhas.nlp_pipeline.R;
@@ -49,6 +50,7 @@ public class EachClusterAdapter extends RecyclerView.Adapter<EachClusterAdapter.
             EachClusterSummaryAdapter summaryAdapter = new EachClusterSummaryAdapter(clusterList.get(position).getSummary(),mContext);
             holder.summaryRecylerView.setAdapter(summaryAdapter);
         }
+        holder.label.setText("Partition "+(position+1));
 
     }
 
@@ -62,6 +64,8 @@ public class EachClusterAdapter extends RecyclerView.Adapter<EachClusterAdapter.
         RecyclerView summaryRecylerView;
         @BindView(R.id.viewFileList)
         Button viewFileList;
+        @BindView(R.id.label)
+        TextView label;
         public ClusterHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this,itemView);

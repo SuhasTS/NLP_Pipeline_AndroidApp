@@ -9,6 +9,21 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/clusterRecylerView"/>
+        android:id="@+id/clusterRecylerView"
+        android:background="#e0e0e0"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_alignParentRight="true"
+        android:elevation="7dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/profile_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/chart"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        app:civ_circle_background_color="#e65100"
+        android:visibility="gone"
+        />
 
 </RelativeLayout>
